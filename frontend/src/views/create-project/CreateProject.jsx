@@ -8,7 +8,7 @@ const CreateProject = () => {
 
   function handleSubmit(e){
     e.preventDefault();
-    axios.post("http://localhost:3000/projects/create", {
+    axios.post("https://ai-code-reviewer-backend-7ptu.onrender.com/projects/create", {
        projectName 
       }).then((res)=>{
         navigate("/");
